@@ -1,3 +1,7 @@
+![Jokee Page 1](./frontend_test_img_1.png)
+
+![Jokee Page 2](./frontend_test_img_2.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
