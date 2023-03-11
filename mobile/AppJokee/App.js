@@ -24,8 +24,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'column',
     backgroundColor: '#fff',
+    height: 'auto',
   },
   scroll: {
-    height: 100000000,
+    height: 1000,
   },
 })

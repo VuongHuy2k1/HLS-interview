@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { Data } from './Data'
-import React, { useEffect } from 'react'
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+
 import { Logs } from 'expo'
 import Cookies from 'universal-cookie'
 export default function Main() {
@@ -11,11 +11,16 @@ export default function Main() {
     like: [],
     dislike: [],
   })
+  const cookies = new Cookies()
   useEffect(() => {
-    const cookies = new Cookies()
-    set = cookies.set('useData', useData, { path: '/' })
-    console.log(cookies.get('useData'))
-  }, [useData])
+    const res = cookies.get('useData')
+    console.log(res)
+    if (res) {
+      setValue(res.reading)
+    } else {
+      setValue(0)
+    }
+  }, [])
 
   function content() {
     if (value >= Data.length) {
@@ -52,16 +57,37 @@ export default function Main() {
   }
 
   const likeBtn = (e, id) => {
-    var listId = useData.like
+    var like = useData.like
+    var newLike = [...like, id]
     var dislike = useData.dislike
+    var reading = value + 1
+    var variable = {
+      token: useData.token,
+      like: newLike,
+      dislike: useData.dislike,
+      reading: reading,
+    }
     setValue(value + 1)
-    setUseData({ token: 'use12345', like: [...listId, id], dislike })
+    setUseData({ token: 'use12345', like: newLike, dislike })
+    cookies.set('useData', variable, { path: '/' })
+    console.log(cookies.get('useData'))
   }
   const dislikeBtn = (e, id) => {
-    var listId = useData.dislike
+    var dislike = useData.dislike
+
+    var newDislike = [...dislike, id]
     var like = useData.like
+    var reading = value + 1
+    var variable = {
+      token: useData.token,
+      like: useData.like,
+      dislike: newDislike,
+      reading: reading,
+    }
     setValue(value + 1)
-    setUseData({ token: 'use12345', like, dislike: [...listId, id] })
+    setUseData({ token: 'use12345', like, dislike: newDislike })
+    cookies.set('useData', variable, { path: '/' })
+    console.log(cookies.get('useData'))
   }
 
   return (

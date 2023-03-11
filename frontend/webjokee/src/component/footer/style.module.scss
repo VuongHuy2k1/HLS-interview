@@ -1,0 +1,28 @@
+.container{
+    border-top: solid 2px #ebebeb;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: #fff;
+    height: auto;
+  width: 100%;
+ 
+  padding: 1% 0;
+ 
+}
+.title{
+ text-align: center;
+ color: #9e9e9e;
+ font-size: 1rem;
+ margin: 0 22%;
+}
+.content{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #646464;
+
+    margin: 1% 20%;
+}
