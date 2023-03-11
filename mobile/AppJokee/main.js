@@ -14,7 +14,7 @@ export default function Main() {
   const cookies = new Cookies()
   useEffect(() => {
     const res = cookies.get('useData')
-    console.log(res)
+
     if (res) {
       setValue(res.reading)
     } else {
@@ -70,7 +70,6 @@ export default function Main() {
     setValue(value + 1)
     setUseData({ token: 'use12345', like: newLike, dislike })
     cookies.set('useData', variable, { path: '/' })
-    console.log(cookies.get('useData'))
   }
   const dislikeBtn = (e, id) => {
     var dislike = useData.dislike
@@ -87,7 +86,6 @@ export default function Main() {
     setValue(value + 1)
     setUseData({ token: 'use12345', like, dislike: newDislike })
     cookies.set('useData', variable, { path: '/' })
-    console.log(cookies.get('useData'))
   }
 
   return (

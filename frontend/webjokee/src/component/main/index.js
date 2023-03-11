@@ -14,7 +14,7 @@ function Main() {
 
   useEffect(() => {
     const res = cookies.get('useData')
-    console.log(res)
+
     if (res) {
       setValue(res.reading)
     } else {
@@ -24,12 +24,12 @@ function Main() {
   function content() {
     if (value >= Data.length) {
       return (
-        <h className={styles.contentEnd}>
+        <h1 className={styles.contentEnd}>
           "That's all the jokes for today! Come back another day!"
-        </h>
+        </h1>
       )
     } else {
-      return <h className={styles.content}>{Data[value].content}</h>
+      return <h1 className={styles.content}>{Data[value].content}</h1>
     }
   }
   const button = () => {
@@ -42,13 +42,13 @@ function Main() {
             className={styles.btnLeft}
             onClick={(e) => likeBtn(e, Data[value].id)}
           >
-            <h className={styles.btnContent}>This is Funny!</h>
+            <h1 className={styles.btnContent}>This is Funny!</h1>
           </button>
           <button
             className={styles.btnRight}
             onClick={(e) => dislikeBtn(e, Data[value].id)}
           >
-            <h className={styles.btnContent}>This is not funny.</h>
+            <h1 className={styles.btnContent}>This is not funny.</h1>
           </button>
         </div>
       )
@@ -69,7 +69,6 @@ function Main() {
     setValue(value + 1)
     setUseData({ token: 'use12345', like: newLike, dislike })
     cookies.set('useData', variable, { path: '/' })
-    console.log(cookies.get('useData'))
   }
   const dislikeBtn = (e, id) => {
     var dislike = useData.dislike
@@ -86,7 +85,6 @@ function Main() {
     setValue(value + 1)
     setUseData({ token: 'use12345', like, dislike: newDislike })
     cookies.set('useData', variable, { path: '/' })
-    console.log(cookies.get('useData'))
   }
 
   return (

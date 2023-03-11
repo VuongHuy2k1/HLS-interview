@@ -13,8 +13,8 @@ function Header() {
 
       <div className={styles.right}>
         <div className={styles.content}>
-          <h className={styles.title}>Handicrafed by</h>
-          <h className={styles.name}>Vuong Huy</h>
+          <h3 className={styles.title}>Handicrafed by</h3>
+          <h3 className={styles.name}>Vuong Huy</h3>
         </div>
         <img
           alt=""
