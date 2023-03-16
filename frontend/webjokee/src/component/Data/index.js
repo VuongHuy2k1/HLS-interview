@@ -2,7 +2,7 @@ export const Data = [
   {
     id: 1,
     content:
-      'A young boy enters a barber shop and the barber whispers to his customer. "This is the dumbest kid in the world. Watch while I prove it you." The barber puts a dollar bill in one hand and two quarters in the other, then calls the boy over and asks, "Which do you want, son?" The boy takes the quarters and leaves. "What did I tell you?" said the barber. "That kid never learns!" Later, when the customer leaves, he sees the same young boy coming out of the ice cream store. "Hey, son! May I ask you a question? Why did you take the quarters instead of the dollar bill?" The boy licked his cone and replied, "Because the day I take the dollar, the game is over!"',
+      'A child asked his father, "How were people born?" So his father said, "Adam and Eva made babies, then their babies becam adults anda made babies, and so on." The child then went to his mother, asked hẻ the same question and she told him, "We were mon-keys then we evolved to become like we are now". The child ran back to his father and said, "You lied to me!" His father replied, "No, your mom was talking about her side of the family.',
   },
   {
     id: 2,

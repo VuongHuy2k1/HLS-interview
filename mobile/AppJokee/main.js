@@ -111,8 +111,8 @@ const styles = StyleSheet.create({
   },
   top: {
     paddingHorizontal: 20,
-    paddingVertical: 20,
-    width: '100%',
+    paddingVertical: 30,
+    width: '94%',
     justifyContent: 'center',
     flexDirection: 'column',
     alignContent: 'center',
@@ -124,9 +124,9 @@ const styles = StyleSheet.create({
     width: '80%',
     alignContent: 'center',
     alignItems: 'center',
-    marginTop: 30,
+    marginTop: 40,
   },
-  content: { textAlign: 'justify' },
+  content: { textAlign: 'justify', opacity: 0.6 },
   contentEnd: {
     textAlign: 'center',
     justifyContent: 'center',
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
   },
   btnLeft: {
     height: 'auto',
-    width: 120,
+    width: 140,
     backgroundColor: '#2C7EDB',
     justifyContent: 'center',
 
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
   },
   btnRight: {
     height: 'auto',
-    width: 120,
+    width: 140,
     backgroundColor: '#29B363',
     justifyContent: 'center',
 
@@ -155,7 +155,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   btnContent: {
-    marginVertical: 10,
-    color: '#fff',
+    marginVertical: 12,
+    color: '#ffff',
+    fontWeight: 500,
   },
 })

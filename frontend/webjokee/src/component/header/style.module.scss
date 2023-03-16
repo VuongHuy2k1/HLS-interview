@@ -7,13 +7,14 @@ background-color: #fff;
     width: auto;
     margin: 0.5% 12%;
     padding-Top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   .left{
     display: flex;
     width: 50%;
     height: 100%;
     padding-Left: 20px;
+    align-items: center;
  
   }
   .right {
@@ -31,14 +32,16 @@ background-color: #fff;
     flex-direction: column;
     justify-content: center;
   }
- .title { color: #9E9E9E }
+ .title { color: #9E9E9E ;font-style: italic; font-weight: 400;}
+ .name{font-weight: 400}
   .avatar {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border-Radius: 50%;
     margin:0 10px;
    
   }
   h3{
+    font-size: 1rem;
     margin: 0 !important;
   }

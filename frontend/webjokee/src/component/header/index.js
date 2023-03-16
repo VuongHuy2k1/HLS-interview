@@ -7,19 +7,19 @@ function Header() {
         <img
           alt=""
           className={styles.avatar}
-          src={process.env.PUBLIC_URL + '/lg.jpg'}
+          src={process.env.PUBLIC_URL + '/logo.png'}
         ></img>
       </div>
 
       <div className={styles.right}>
         <div className={styles.content}>
           <h3 className={styles.title}>Handicrafed by</h3>
-          <h3 className={styles.name}>Vuong Huy</h3>
+          <h3 className={styles.name}>Jim HLS</h3>
         </div>
         <img
           alt=""
           className={styles.avatar}
-          src={process.env.PUBLIC_URL + '/avatar.jpg'}
+          src={process.env.PUBLIC_URL + '/avatar.png'}
         ></img>
       </div>
     </div>
